@@ -1,6 +1,6 @@
 #
 %define	_snap	20060321
-Summary:	-
+Summary:	The moto4lin software is intended to be used with Motorola telephones based on the P2K platform
 Name:		p2kmoto
 Version:	0.1
 Release:	0.%{_snap}.1
@@ -14,17 +14,15 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	libusb-devel
-#Requires(postun):	-
-#Requires(pre,post):	-
-#Requires(preun):	-
-#Requires:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+The moto4lin software is intended to be used with Motorola telephones
+based on the P2K platform.
 
 %package libs
-Summary:	-
-Summary(pl):	-
+Summary:	Libraries for p2kmoto
+Summary(pl):	Biblioteki dla p2kmoto
 Group:		Libraries
 
 %description libs
@@ -40,7 +38,7 @@ Requires:	%{name}-libs = %{version}-%{release}
 This is the package containing the header files for p2kmoto library.
 
 %description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe biblioteki p2kmoto
+Ten pakiet zawiera pliki nag³ówkowe biblioteki p2kmoto.
 
 %package static
 Summary:	Static p2kmoto library
@@ -88,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files libs
 %defattr(644,root,root,755)
-%{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
