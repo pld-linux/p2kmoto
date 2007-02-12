@@ -1,7 +1,7 @@
 #
 %define	_snap	20060321
 Summary:	Software intended to be used with Motorola telephones based on the P2K platform
-Summary(pl):	Oprogramowanie do uøywania z telefonami Motorola opartymi na platformie P2K
+Summary(pl.UTF-8):   Oprogramowanie do u≈ºywania z telefonami Motorola opartymi na platformie P2K
 Name:		p2kmoto
 Version:	0.1
 Release:	0.%{_snap}.1
@@ -21,43 +21,43 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The moto4lin software is intended to be used with Motorola telephones
 based on the P2K platform.
 
-%description -l pl
-Oprogramowanie moto4lin jest przeznaczone do uøywania z telefonami
+%description -l pl.UTF-8
+Oprogramowanie moto4lin jest przeznaczone do u≈ºywania z telefonami
 Motorola opartymi na platformie P2K.
 
 %package libs
 Summary:	Libraries for p2kmoto
-Summary(pl):	Biblioteki dla p2kmoto
+Summary(pl.UTF-8):   Biblioteki dla p2kmoto
 Group:		Libraries
 
 %description libs
 Libraries for p2kmoto.
 
-%description libs -l pl
+%description libs -l pl.UTF-8
 Biblioteki dla p2kmoto.
 
 %package devel
 Summary:	Header files for p2kmoto library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki p2kmoto
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki p2kmoto
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
 %description devel
 This is the package containing the header files for p2kmoto library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag≥Ûwkowe biblioteki p2kmoto.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nag≈Ç√≥wkowe biblioteki p2kmoto.
 
 %package static
 Summary:	Static p2kmoto library
-Summary(pl):	Statyczna biblioteka p2kmoto
+Summary(pl.UTF-8):   Statyczna biblioteka p2kmoto
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static p2kmoto library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka p2kmoto
 
 %prep
