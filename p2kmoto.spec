@@ -1,7 +1,7 @@
 #
 %define	_snap	20060321
 Summary:	Software intended to be used with Motorola telephones based on the P2K platform
-Summary(pl.UTF-8):   Oprogramowanie do używania z telefonami Motorola opartymi na platformie P2K
+Summary(pl.UTF-8):	Oprogramowanie do używania z telefonami Motorola opartymi na platformie P2K
 Name:		p2kmoto
 Version:	0.1
 Release:	0.%{_snap}.1
@@ -27,7 +27,7 @@ Motorola opartymi na platformie P2K.
 
 %package libs
 Summary:	Libraries for p2kmoto
-Summary(pl.UTF-8):   Biblioteki dla p2kmoto
+Summary(pl.UTF-8):	Biblioteki dla p2kmoto
 Group:		Libraries
 
 %description libs
@@ -38,7 +38,7 @@ Biblioteki dla p2kmoto.
 
 %package devel
 Summary:	Header files for p2kmoto library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki p2kmoto
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki p2kmoto
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
@@ -50,7 +50,7 @@ Ten pakiet zawiera pliki nagłówkowe biblioteki p2kmoto.
 
 %package static
 Summary:	Static p2kmoto library
-Summary(pl.UTF-8):   Statyczna biblioteka p2kmoto
+Summary(pl.UTF-8):	Statyczna biblioteka p2kmoto
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
